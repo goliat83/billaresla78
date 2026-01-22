@@ -1,0 +1,59 @@
+// Hero Carousel Styles
+.hero-carousel {
+    ::ng-deep {
+        .owl-carousel,
+        .owl-stage-outer,
+        .owl-stage,
+        .owl-item {
+            height: 100vh;
+        }
+
+        .owl-item {
+            .hero-slide {
+                height: 100vh;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+        }
+
+        // Hide dots or style them
+        .owl-dots {
+            position: absolute;
+            bottom: 100px;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 15;
+
+            .owl-dot {
+                span {
+                    width: 12px;
+                    height: 12px;
+                    background: rgba(255, 255, 255, 0.4);
+                    border: 2px solid transparent;
+                    transition: all 0.3s ease;
+                }
+
+                &.active span,
+                &:hover span {
+                    background: #00d9ff;
+                    border-color: #00d9ff;
+                    box-shadow: 0 0 10px rgba(0, 217, 255, 0.5);
+                }
+            }
+        }
+
+        // Fade animation
+        .owl-item {
+            opacity: 0;
+            transition: opacity 0.5s ease;
+
+            &.active {
+                opacity: 1;
+            }
+        }
+    }
+}

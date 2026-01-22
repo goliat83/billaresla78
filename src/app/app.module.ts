@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { NgxScrollTopModule } from 'ngx-scrolltop';
+import { CarouselModule } from 'ngx-owl-carousel-o';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
@@ -24,6 +25,7 @@ import { ErrorPageComponent } from './components/pages/error-page/error-page.com
         CommonModule,
         AppRoutingModule,
         NgxScrollTopModule,
+        CarouselModule,
         BrowserAnimationsModule
     ],
     providers: [],

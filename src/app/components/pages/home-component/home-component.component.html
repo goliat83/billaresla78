@@ -1,17 +1,25 @@
 <!-- Hero Section -->
 <section id="inicio" class="relative min-h-screen flex items-center justify-center overflow-hidden">
-    <!-- Background Image with Overlay -->
-    <div class="absolute inset-0 z-0">
-        <img
-            src="assets/images/banners/hero-billar.jpg"
-            alt="Billares la 78 - Club de billar en Medellín"
-            class="w-full h-full object-cover"
-        >
-        <div class="absolute inset-0 bg-gradient-to-b from-dark-950/90 via-dark-950/70 to-dark-950"></div>
+    <!-- Background Carousel -->
+    <div class="absolute inset-0 z-0 hero-carousel">
+        <owl-carousel-o [options]="heroCarouselOptions">
+            <ng-container *ngFor="let slide of heroSlides">
+                <ng-template carouselSlide>
+                    <div class="hero-slide">
+                        <img
+                            [src]="slide.image"
+                            [alt]="slide.alt"
+                            class="w-full h-screen object-cover"
+                        >
+                    </div>
+                </ng-template>
+            </ng-container>
+        </owl-carousel-o>
+        <div class="absolute inset-0 bg-gradient-to-b from-dark-950/90 via-dark-950/70 to-dark-950 z-10"></div>
     </div>
 
     <!-- Content -->
-    <div class="container mx-auto px-4 relative z-10 text-center">
+    <div class="container mx-auto px-4 relative z-20 text-center">
         <div data-aos="fade-up" data-aos-duration="1000">
             <h1 class="text-5xl md:text-7xl lg:text-8xl font-bold font-serif mb-6">
                 <span class="text-white">Billares</span>
@@ -42,7 +50,7 @@
     </div>
 
     <!-- Scroll Indicator -->
-    <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
+    <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce z-20">
         <a href="#servicios" class="text-primary-500">
             <i class="ri-arrow-down-line text-3xl"></i>
         </a>
