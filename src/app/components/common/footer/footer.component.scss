@@ -1,0 +1,8 @@
+footer {
+    background: linear-gradient(180deg, #E4F2FF 0%, rgba(217, 217, 217, 0.00) 77.19%);
+}
+.copyright-area {
+    &::before {
+        background: linear-gradient(90deg, rgba(217, 217, 217, 0.00) 9.47%, #D9D9D9 49.43%, rgba(217, 217, 217, 0.00) 81.86%);
+    }
+}

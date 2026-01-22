@@ -1,0 +1,34 @@
+.accordion {
+    .accordion-header {
+        &::before {
+            @apply top-1/2;
+            @apply absolute;
+            content: "\ea12";
+            @apply text-black;
+            @apply text-[22px];
+            @apply md:text-[28px];
+            @apply right-[18px];
+            @apply md:right-[30px];
+            @apply -translate-y-2/4;
+            font: {
+                weight: normal;
+                family: 'remixicon';
+            };
+        }
+        &.open {
+            border-radius: 20px 20px 0 0;
+        }
+    }
+    .accordion-content {
+        @apply hidden;
+
+        &.open {
+            @apply block;
+        }
+    }
+}
+.hidden {
+    &.block {
+        display: block !important;
+    }
+}

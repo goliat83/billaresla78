@@ -1,0 +1,120 @@
+<div class="py-[60px] md:py-[80px] lg:py-[80px] xl:py-[95px]">
+    <div class="container mx-auto px-[12px] 2xl:px-0">
+        <div class="mb-[30px] md:mb-[40px] lg:mb-[50px] text-center">
+            <span class="block uppercase font-medium text-[14px] md:text-[15px] lg:text-[16px] text-[#0a64bc] mb-[7px] md:mb-[8px] lg:mb-[10px]" data-aos="fade-up" data-aos-duration="500" data-aos-delay="100">
+                Thinking about the Future
+            </span>
+            <h2 class="text-black font-bold font-serif text-[28px] md:text-[34px] lg:text-[38px] xl:text-[42px] ml-auto mr-auto lg:max-w-[650px] leading-[1.2]" data-aos="fade-up" data-aos-duration="500" data-aos-delay="200">
+                Find out about our Saving and Investments solutions
+            </h2>
+        </div>
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-[25px]">
+            <div class="self-center">
+                <ul class="xl:max-w-[536px]">
+                    <li
+                        class="group flex rounded-[10px] py-[15px] px-[15px] md:py-[20px] md:px-[25px] xl:py-[25px] xl:px-[30px] xl:mb-[10px] cursor-pointer transition-all last:mb-0"
+                        [ngClass]="{'bg-white': currentTab === 'tab1'}"
+                        (click)="switchTab($event, 'tab1')"
+                        data-aos="fade-up" data-aos-duration="500" data-aos-delay="100"
+                    >
+                        <div class="self-center font-serif text-[28px] md:text-[34px] text-[#0a64bc] w-[45px] h-[45px] md:w-[50px] md:h-[50px] leading-[45px] md:leading-[50px] bg-[#f1f4fe] rounded-full text-center mr-[15px] md:mr-[20px] lg:mr-[25px]">
+                            1
+                        </div>
+                        <h3 class="self-center text-black font-bold font-serif text-[18px] md:text-[20px] lg:text-[22px] transition-all group-hover:text-[#0a64bc]">
+                            Account Management
+                        </h3>
+                    </li>
+                    <li
+                        class="group flex rounded-[10px] py-[15px] px-[15px] md:py-[20px] md:px-[25px] xl:py-[25px] xl:px-[30px] xl:mb-[10px] cursor-pointer transition-all last:mb-0"
+                        [ngClass]="{'bg-white': currentTab === 'tab2'}"
+                        (click)="switchTab($event, 'tab2')"
+                        data-aos="fade-up" data-aos-duration="500" data-aos-delay="200"
+                    >
+                        <div class="self-center font-serif text-[28px] md:text-[34px] text-[#0a64bc] w-[45px] h-[45px] md:w-[50px] md:h-[50px] leading-[45px] md:leading-[50px] bg-[#f1f4fe] rounded-full text-center mr-[15px] md:mr-[20px] lg:mr-[25px]">
+                            2
+                        </div>
+                        <h3 class="self-center text-black font-bold font-serif text-[18px] md:text-[20px] lg:text-[22px] transition-all group-hover:text-[#0a64bc]">
+                            Mobile Deposits
+                        </h3>
+                    </li>
+                    <li
+                        class="group flex rounded-[10px] py-[15px] px-[15px] md:py-[20px] md:px-[25px] xl:py-[25px] xl:px-[30px] xl:mb-[10px] cursor-pointer transition-all last:mb-0"
+                        [ngClass]="{'bg-white': currentTab === 'tab3'}"
+                        (click)="switchTab($event, 'tab3')"
+                        data-aos="fade-up" data-aos-duration="500" data-aos-delay="300"
+                    >
+                        <div class="self-center font-serif text-[28px] md:text-[34px] text-[#0a64bc] w-[45px] h-[45px] md:w-[50px] md:h-[50px] leading-[45px] md:leading-[50px] bg-[#f1f4fe] rounded-full text-center mr-[15px] md:mr-[20px] lg:mr-[25px]">
+                            3
+                        </div>
+                        <h3 class="self-center text-black font-bold font-serif text-[18px] md:text-[20px] lg:text-[22px] transition-all group-hover:text-[#0a64bc]">
+                            Funds Transfers
+                        </h3>
+                    </li>
+                    <li
+                        class="group flex rounded-[10px] py-[15px] px-[15px] md:py-[20px] md:px-[25px] xl:py-[25px] xl:px-[30px] xl:mb-[10px] cursor-pointer transition-all last:mb-0"
+                        [ngClass]="{'bg-white': currentTab === 'tab4'}"
+                        (click)="switchTab($event, 'tab4')"
+                        data-aos="fade-up" data-aos-duration="500" data-aos-delay="400"
+                    >
+                        <div class="self-center font-serif text-[28px] md:text-[34px] text-[#0a64bc] w-[45px] h-[45px] md:w-[50px] md:h-[50px] leading-[45px] md:leading-[50px] bg-[#f1f4fe] rounded-full text-center mr-[15px] md:mr-[20px] lg:mr-[25px]">
+                            4
+                        </div>
+                        <h3 class="self-center text-black font-bold font-serif text-[18px] md:text-[20px] lg:text-[22px] transition-all group-hover:text-[#0a64bc]">
+                            Bill Payment
+                        </h3>
+                    </li>
+                    <li
+                        class="group flex rounded-[10px] py-[15px] px-[15px] md:py-[20px] md:px-[25px] xl:py-[25px] xl:px-[30px] xl:mb-[10px] cursor-pointer transition-all last:mb-0"
+                        [ngClass]="{'bg-white': currentTab === 'tab5'}"
+                        (click)="switchTab($event, 'tab5')"
+                        data-aos="fade-up" data-aos-duration="500" data-aos-delay="500"
+                    >
+                        <div class="self-center font-serif text-[28px] md:text-[34px] text-[#0a64bc] w-[45px] h-[45px] md:w-[50px] md:h-[50px] leading-[45px] md:leading-[50px] bg-[#f1f4fe] rounded-full text-center mr-[15px] md:mr-[20px] lg:mr-[25px]">
+                            5
+                        </div>
+                        <h3 class="self-center text-black font-bold font-serif text-[18px] md:text-[20px] lg:text-[22px] transition-all group-hover:text-[#0a64bc]">
+                            Mobile Alerts
+                        </h3>
+                    </li>
+                </ul>
+            </div>
+            <div class="self-center 2xl:pl-[6px] 2xl:pr-[67px] relative 2xl:-top-[17px]">
+                <div
+                    id="tab1"
+                    *ngIf="currentTab === 'tab1'"
+                    data-aos="fade-up" data-aos-duration="500" data-aos-delay="100"
+                >
+                    <img src="assets/images/service-details/service-details2.png" alt="service-details-image">
+                </div>
+                <div
+                    id="tab2"
+                    *ngIf="currentTab === 'tab2'"
+                    data-aos="fade-up" data-aos-duration="500" data-aos-delay="100"
+                >
+                    <img src="assets/images/service-details/service-details3.png" alt="service-details-image">
+                </div>
+                <div
+                    id="tab3"
+                    *ngIf="currentTab === 'tab3'"
+                    data-aos="fade-up" data-aos-duration="500" data-aos-delay="100"
+                >
+                    <img src="assets/images/service-details/service-details4.png" alt="service-details-image">
+                </div>
+                <div
+                    id="tab4"
+                    *ngIf="currentTab === 'tab4'"
+                    data-aos="fade-up" data-aos-duration="500" data-aos-delay="100"
+                >
+                    <img src="assets/images/service-details/service-details5.png" alt="service-details-image">
+                </div>
+                <div
+                    id="tab5"
+                    *ngIf="currentTab === 'tab5'"
+                    data-aos="fade-up" data-aos-duration="500" data-aos-delay="100"
+                >
+                    <img src="assets/images/service-details/service-details6.png" alt="service-details-image">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

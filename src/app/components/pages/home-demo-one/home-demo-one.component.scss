@@ -1,0 +1,5 @@
+.gradient-bg {
+    &::before {
+        background: linear-gradient(180deg, #E4F2FF 0%, rgba(217, 217, 217, 0.00) 94.79%);
+    }
+}

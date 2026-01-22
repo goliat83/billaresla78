@@ -1,0 +1,45 @@
+::ng-deep {
+    .owl-theme {
+        .owl-nav {
+            &.disabled+.owl-dots {
+                @apply mt-[20px];
+                @apply md:mt-[30px];
+                @apply lg:mt-[40px];
+            }
+        }
+        .owl-dots {
+            .owl-dot {
+                span {
+                    @apply my-0;
+                    @apply mx-[4px];
+                    @apply rounded-full;
+                    @apply transition-all;
+                    @apply relative;
+                    @apply bg-transparent;
+                    @apply border;
+                    @apply block;
+                    @apply w-[13px];
+                    @apply h-[13px];
+                    @apply border-[#8a8a8a];
+                    @apply before:absolute;
+                    @apply before:left-0;
+                    @apply before:right-0;
+                    @apply before:top-0;
+                    @apply before:bottom-0;
+                    @apply before:rounded-full;
+                    @apply before:bg-[#b31942];
+                    @apply before:m-[2px];
+                    @apply before:opacity-0;
+                    @apply before:transition-all;
+                }
+                &:hover, &.active {
+                    span {
+                        @apply bg-transparent;
+                        @apply border-[#b31942];
+                        @apply before:opacity-100;
+                    }
+                }
+            }
+        }
+    }
+}

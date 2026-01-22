@@ -1,0 +1,22 @@
+<div
+    class="py-[150px] md:py-[250px] lg:py-[350px] xl:py-[400px] bg-cover bg-no-repeat bg-center"
+    style="background-image: url(assets/images/video-bg.jpg);"
+>
+    <div class="container mx-auto px-[12px] 2xl:px-0">
+        <div class="text-center">
+            <button type="button" class="w-[90px] h-[90px] md:w-[110px] md:h-[110px] lg:w-[145px] lg:h-[145px] rounded-full relative border-[3px] border-white backdrop-blur-[21px] text-[#0a64bc] transition-all hover:bg-white" (click)="openPopup()" data-aos="fade-up" data-aos-duration="500" data-aos-delay="100">
+                <i class="ri-play-fill text-[60px] md:text-[70px] lg:text-[80px] absolute left-0 right-0 top-1/2 -translate-y-2/4"></i>
+            </button>
+        </div>
+    </div>
+</div>
+
+<!-- Video Popup -->
+<div class="video-popup fixed top-0 bottom-0 left-0 right-0 flex items-center text-center z-[9992]" *ngIf="isOpen">
+    <div class="w-[300px] sm:w-[400px] md:w-[720px] p-[10px] md:p-[20px] relative rounded-[5px] bg-white ml-auto mr-auto">
+        <iframe src="https://www.youtube.com/embed/XNQk1qt__Vw" class="w-full h-[177px] sm:h-[238px] md:h-[426px] rounded-[5px]" title="Setup and Local Installation - React Nextjs Online Yoga Coaching &amp; Training Courses System" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <button (click)="closePopup()" type="button" class="absolute -top-[45px] right-0 w-[30px] h-[30px] md:w-[35px] md:h-[35px] rounded-full text-[18px] md:text-[20px] leading-[31px] transition-all bg-white hover:bg-[#b31942] hover:text-white">
+            <i class="ri-close-fill"></i>
+        </button>
+    </div>
+</div>

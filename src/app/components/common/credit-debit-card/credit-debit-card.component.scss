@@ -1,0 +1,6 @@
+.image {
+    &::before {
+        background: linear-gradient(180deg, rgba(10, 100, 188, 0.60) 0%, rgba(179, 25, 66, 0.60) 100%);
+        filter: blur(135px);
+    }
+}

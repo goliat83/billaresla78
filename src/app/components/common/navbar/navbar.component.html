@@ -1,0 +1,118 @@
+<header
+    class="navbar-area fixed top-0 left-0 right-0 z-50 transition-all duration-300"
+    [ngClass]="{'bg-dark-950/95 backdrop-blur-md shadow-lg': isSticky, 'bg-transparent': !isSticky}"
+>
+    <div class="container mx-auto px-4">
+        <nav class="flex items-center justify-between py-4">
+            <!-- Logo -->
+            <a routerLink="/" class="flex items-center gap-2">
+                <span class="text-2xl md:text-3xl font-bold font-serif">
+                    <span class="text-white">Billares</span>
+                    <span class="text-primary-500">la 78</span>
+                </span>
+            </a>
+
+            <!-- Desktop Menu -->
+            <div class="hidden xl:flex items-center gap-8">
+                <a
+                    href="#inicio"
+                    class="text-gray-300 hover:text-primary-500 transition-colors font-medium"
+                >
+                    Inicio
+                </a>
+                <a
+                    href="#servicios"
+                    class="text-gray-300 hover:text-primary-500 transition-colors font-medium"
+                >
+                    Servicios
+                </a>
+                <a
+                    href="#galeria"
+                    class="text-gray-300 hover:text-primary-500 transition-colors font-medium"
+                >
+                    Galería
+                </a>
+                <a
+                    href="#precios"
+                    class="text-gray-300 hover:text-primary-500 transition-colors font-medium"
+                >
+                    Precios
+                </a>
+                <a
+                    href="#ubicacion"
+                    class="text-gray-300 hover:text-primary-500 transition-colors font-medium"
+                >
+                    Ubicación
+                </a>
+                <a
+                    href="#contacto"
+                    class="btn-neon-filled text-sm py-2 px-6"
+                >
+                    Reservar
+                </a>
+            </div>
+
+            <!-- Mobile Menu Button -->
+            <button
+                class="xl:hidden text-white text-3xl"
+                (click)="toggleClass()"
+            >
+                <i class="ri-menu-line" *ngIf="!classApplied"></i>
+                <i class="ri-close-line" *ngIf="classApplied"></i>
+            </button>
+        </nav>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div
+        class="xl:hidden absolute top-full left-0 right-0 bg-dark-900/98 backdrop-blur-lg border-t border-dark-700 transition-all duration-300"
+        [ngClass]="{'opacity-100 visible': classApplied, 'opacity-0 invisible': !classApplied}"
+    >
+        <div class="container mx-auto px-4 py-6">
+            <div class="flex flex-col gap-4">
+                <a
+                    href="#inicio"
+                    class="text-gray-300 hover:text-primary-500 transition-colors font-medium py-2"
+                    (click)="toggleClass()"
+                >
+                    Inicio
+                </a>
+                <a
+                    href="#servicios"
+                    class="text-gray-300 hover:text-primary-500 transition-colors font-medium py-2"
+                    (click)="toggleClass()"
+                >
+                    Servicios
+                </a>
+                <a
+                    href="#galeria"
+                    class="text-gray-300 hover:text-primary-500 transition-colors font-medium py-2"
+                    (click)="toggleClass()"
+                >
+                    Galería
+                </a>
+                <a
+                    href="#precios"
+                    class="text-gray-300 hover:text-primary-500 transition-colors font-medium py-2"
+                    (click)="toggleClass()"
+                >
+                    Precios
+                </a>
+                <a
+                    href="#ubicacion"
+                    class="text-gray-300 hover:text-primary-500 transition-colors font-medium py-2"
+                    (click)="toggleClass()"
+                >
+                    Ubicación
+                </a>
+                <a
+                    href="#contacto"
+                    class="btn-neon-filled text-center mt-4"
+                    (click)="toggleClass()"
+                >
+                    Reservar
+                </a>
+            </div>
+        </div>
+    </div>
+</header>

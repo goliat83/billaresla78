@@ -1,0 +1,33 @@
+::ng-deep {
+    .scrolltop-button {
+        opacity: 1 !important;
+        z-index: 99 !important;
+        width: 45px !important;
+        height: 45px !important;
+        display: block !important;
+        transition: .5s !important;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px !important;
+
+        .symbol-container {
+            svg {
+                @apply inline-block;
+                transition: .5s !important;
+                fill: #000000 !important;
+                margin-top: 2px !important;
+            }
+        }
+        &.gray {
+            background-color: #ffffff !important;
+
+            &:hover {
+                background-color: #0a64bc !important;
+
+                .symbol-container {
+                    svg {
+                        fill: #ffffff !important;
+                    }
+                }
+            }
+        }
+    }
+}

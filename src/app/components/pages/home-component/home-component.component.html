@@ -1,0 +1,506 @@
+<!-- Hero Section -->
+<section id="inicio" class="relative min-h-screen flex items-center justify-center overflow-hidden">
+    <!-- Background Image with Overlay -->
+    <div class="absolute inset-0 z-0">
+        <img
+            src="https://images.unsplash.com/photo-1615722539219-8c85f8b91e86?q=80&w=2070"
+            alt="Mesa de billar"
+            class="w-full h-full object-cover"
+        >
+        <div class="absolute inset-0 bg-gradient-to-b from-dark-950/90 via-dark-950/70 to-dark-950"></div>
+    </div>
+
+    <!-- Content -->
+    <div class="container mx-auto px-4 relative z-10 text-center">
+        <div data-aos="fade-up" data-aos-duration="1000">
+            <h1 class="text-5xl md:text-7xl lg:text-8xl font-bold font-serif mb-6">
+                <span class="text-white">Billares</span>
+                <span class="text-primary-500 neon-text"> la 78</span>
+            </h1>
+            <p class="text-xl md:text-2xl text-gray-300 mb-8 max-w-2xl mx-auto">
+                El club de billar más exclusivo de Medellín. Donde la precisión se encuentra con el estilo.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="#servicios" class="btn-neon-filled">
+                    Explorar Servicios
+                </a>
+                <a href="#contacto" class="btn-neon">
+                    Reservar Ahora
+                </a>
+            </div>
+        </div>
+
+        <!-- Horario Badge -->
+        <div
+            data-aos="fade-up"
+            data-aos-delay="300"
+            class="mt-16 inline-flex items-center gap-3 glass-card px-6 py-3"
+        >
+            <i class="ri-time-line text-primary-500 text-2xl"></i>
+            <span class="text-white">Abierto todos los días: <strong class="text-primary-400">8:00 AM - 10:00 PM</strong></span>
+        </div>
+    </div>
+
+    <!-- Scroll Indicator -->
+    <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
+        <a href="#servicios" class="text-primary-500">
+            <i class="ri-arrow-down-line text-3xl"></i>
+        </a>
+    </div>
+</section>
+
+<!-- Servicios Section -->
+<section id="servicios" class="py-20 lg:py-32 bg-dark-950 relative">
+    <div class="absolute inset-0 opacity-30">
+        <div class="absolute top-0 left-1/4 w-96 h-96 bg-primary-500/20 rounded-full blur-3xl"></div>
+        <div class="absolute bottom-0 right-1/4 w-96 h-96 bg-primary-700/20 rounded-full blur-3xl"></div>
+    </div>
+
+    <div class="container mx-auto px-4 relative z-10">
+        <div class="text-center mb-16" data-aos="fade-up">
+            <span class="text-primary-500 uppercase tracking-widest text-sm font-semibold">Nuestros Servicios</span>
+            <h2 class="text-4xl md:text-5xl font-bold font-serif text-white mt-4">
+                Todo lo que necesitas para <span class="text-primary-500">disfrutar</span>
+            </h2>
+            <div class="neon-line w-24 mx-auto mt-6"></div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Mesas de Billar -->
+            <div
+                class="glass-card p-8 transition-all duration-300 hover:-translate-y-2"
+                data-aos="fade-up"
+                data-aos-delay="100"
+            >
+                <div class="w-16 h-16 bg-primary-500/20 rounded-2xl flex items-center justify-center mb-6">
+                    <i class="ri-focus-3-line text-3xl text-primary-500"></i>
+                </div>
+                <h3 class="text-2xl font-bold text-white mb-4">Mesas Profesionales</h3>
+                <p class="text-gray-400 mb-4">
+                    Mesas de pool y carambola de alta calidad, perfectamente mantenidas para una experiencia de juego premium.
+                </p>
+                <span class="text-primary-500 font-semibold">Desde $8.000/hora</span>
+            </div>
+
+            <!-- Torneos -->
+            <div
+                class="glass-card p-8 transition-all duration-300 hover:-translate-y-2"
+                data-aos="fade-up"
+                data-aos-delay="200"
+            >
+                <div class="w-16 h-16 bg-primary-500/20 rounded-2xl flex items-center justify-center mb-6">
+                    <i class="ri-trophy-line text-3xl text-primary-500"></i>
+                </div>
+                <h3 class="text-2xl font-bold text-white mb-4">Torneos</h3>
+                <p class="text-gray-400 mb-4">
+                    Participa en nuestros torneos semanales y mensuales. Premios increíbles y competencia de alto nivel.
+                </p>
+                <span class="text-primary-500 font-semibold">Inscripciones abiertas</span>
+            </div>
+
+            <!-- Bar -->
+            <div
+                class="glass-card p-8 transition-all duration-300 hover:-translate-y-2"
+                data-aos="fade-up"
+                data-aos-delay="300"
+            >
+                <div class="w-16 h-16 bg-primary-500/20 rounded-2xl flex items-center justify-center mb-6">
+                    <i class="ri-goblet-line text-3xl text-primary-500"></i>
+                </div>
+                <h3 class="text-2xl font-bold text-white mb-4">Bar & Bebidas</h3>
+                <p class="text-gray-400 mb-4">
+                    Disfruta de nuestra selección de bebidas, cocteles y snacks mientras juegas con tus amigos.
+                </p>
+                <span class="text-primary-500 font-semibold">Carta completa</span>
+            </div>
+
+            <!-- Clases -->
+            <div
+                class="glass-card p-8 transition-all duration-300 hover:-translate-y-2"
+                data-aos="fade-up"
+                data-aos-delay="400"
+            >
+                <div class="w-16 h-16 bg-primary-500/20 rounded-2xl flex items-center justify-center mb-6">
+                    <i class="ri-user-star-line text-3xl text-primary-500"></i>
+                </div>
+                <h3 class="text-2xl font-bold text-white mb-4">Clases de Billar</h3>
+                <p class="text-gray-400 mb-4">
+                    Aprende de los mejores. Clases para principiantes y avanzados con instructores profesionales.
+                </p>
+                <span class="text-primary-500 font-semibold">Horarios flexibles</span>
+            </div>
+
+            <!-- Eventos -->
+            <div
+                class="glass-card p-8 transition-all duration-300 hover:-translate-y-2"
+                data-aos="fade-up"
+                data-aos-delay="500"
+            >
+                <div class="w-16 h-16 bg-primary-500/20 rounded-2xl flex items-center justify-center mb-6">
+                    <i class="ri-calendar-event-line text-3xl text-primary-500"></i>
+                </div>
+                <h3 class="text-2xl font-bold text-white mb-4">Eventos Privados</h3>
+                <p class="text-gray-400 mb-4">
+                    Celebra cumpleaños, reuniones de empresa o cualquier evento especial en nuestro espacio exclusivo.
+                </p>
+                <span class="text-primary-500 font-semibold">Reserva anticipada</span>
+            </div>
+
+            <!-- Snacks -->
+            <div
+                class="glass-card p-8 transition-all duration-300 hover:-translate-y-2"
+                data-aos="fade-up"
+                data-aos-delay="600"
+            >
+                <div class="w-16 h-16 bg-primary-500/20 rounded-2xl flex items-center justify-center mb-6">
+                    <i class="ri-restaurant-line text-3xl text-primary-500"></i>
+                </div>
+                <h3 class="text-2xl font-bold text-white mb-4">Snacks & Comida</h3>
+                <p class="text-gray-400 mb-4">
+                    Deliciosos snacks y comida rápida para acompañar tus partidas. Servicio directo a tu mesa.
+                </p>
+                <span class="text-primary-500 font-semibold">Menú variado</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Galería Section -->
+<section id="galeria" class="py-20 lg:py-32 bg-dark-900 relative">
+    <div class="container mx-auto px-4">
+        <div class="text-center mb-16" data-aos="fade-up">
+            <span class="text-primary-500 uppercase tracking-widest text-sm font-semibold">Galería</span>
+            <h2 class="text-4xl md:text-5xl font-bold font-serif text-white mt-4">
+                Conoce nuestro <span class="text-primary-500">espacio</span>
+            </h2>
+            <div class="neon-line w-24 mx-auto mt-6"></div>
+        </div>
+
+        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+            <div class="col-span-2 row-span-2" data-aos="zoom-in" data-aos-delay="100">
+                <img
+                    src="https://images.unsplash.com/photo-1570303345338-e1f0eddf4b46?q=80&w=2071"
+                    alt="Interior del club"
+                    class="w-full h-full object-cover rounded-2xl hover:scale-105 transition-transform duration-500"
+                >
+            </div>
+            <div data-aos="zoom-in" data-aos-delay="200">
+                <img
+                    src="https://images.unsplash.com/photo-1606567595334-d39972c85dfd?q=80&w=1974"
+                    alt="Mesa de billar"
+                    class="w-full h-48 object-cover rounded-2xl hover:scale-105 transition-transform duration-500"
+                >
+            </div>
+            <div data-aos="zoom-in" data-aos-delay="300">
+                <img
+                    src="https://images.unsplash.com/photo-1621072156002-e2fccdc0b176?q=80&w=1974"
+                    alt="Jugando billar"
+                    class="w-full h-48 object-cover rounded-2xl hover:scale-105 transition-transform duration-500"
+                >
+            </div>
+            <div data-aos="zoom-in" data-aos-delay="400">
+                <img
+                    src="https://images.unsplash.com/photo-1545454675-3531b543be5d?q=80&w=2070"
+                    alt="Bolas de billar"
+                    class="w-full h-48 object-cover rounded-2xl hover:scale-105 transition-transform duration-500"
+                >
+            </div>
+            <div data-aos="zoom-in" data-aos-delay="500">
+                <img
+                    src="https://images.unsplash.com/photo-1626775238053-4315516eedc9?q=80&w=2072"
+                    alt="Ambiente del club"
+                    class="w-full h-48 object-cover rounded-2xl hover:scale-105 transition-transform duration-500"
+                >
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Precios Section -->
+<section id="precios" class="py-20 lg:py-32 bg-dark-950 relative overflow-hidden">
+    <div class="absolute inset-0 opacity-20">
+        <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-primary-500/30 rounded-full blur-3xl"></div>
+    </div>
+
+    <div class="container mx-auto px-4 relative z-10">
+        <div class="text-center mb-16" data-aos="fade-up">
+            <span class="text-primary-500 uppercase tracking-widest text-sm font-semibold">Tarifas</span>
+            <h2 class="text-4xl md:text-5xl font-bold font-serif text-white mt-4">
+                Precios <span class="text-primary-500">accesibles</span>
+            </h2>
+            <div class="neon-line w-24 mx-auto mt-6"></div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+            <!-- Plan Básico -->
+            <div
+                class="glass-card p-8 text-center transition-all duration-300 hover:-translate-y-2"
+                data-aos="fade-up"
+                data-aos-delay="100"
+            >
+                <h3 class="text-xl font-bold text-white mb-2">Mesa Pool</h3>
+                <p class="text-gray-400 mb-6">Por hora</p>
+                <div class="text-5xl font-bold text-primary-500 mb-6">
+                    $8.000
+                    <span class="text-lg text-gray-400 font-normal">/hora</span>
+                </div>
+                <ul class="text-gray-300 space-y-3 mb-8">
+                    <li class="flex items-center justify-center gap-2">
+                        <i class="ri-check-line text-primary-500"></i>
+                        Mesa profesional
+                    </li>
+                    <li class="flex items-center justify-center gap-2">
+                        <i class="ri-check-line text-primary-500"></i>
+                        Tacos incluidos
+                    </li>
+                    <li class="flex items-center justify-center gap-2">
+                        <i class="ri-check-line text-primary-500"></i>
+                        Bolas premium
+                    </li>
+                </ul>
+                <a href="#contacto" class="btn-neon w-full block text-center">Reservar</a>
+            </div>
+
+            <!-- Plan Premium -->
+            <div
+                class="glass-card p-8 text-center border-primary-500/50 relative transition-all duration-300 hover:-translate-y-2 neon-pulse"
+                data-aos="fade-up"
+                data-aos-delay="200"
+            >
+                <div class="absolute -top-4 left-1/2 transform -translate-x-1/2 bg-primary-500 text-dark-950 px-4 py-1 rounded-full text-sm font-bold">
+                    POPULAR
+                </div>
+                <h3 class="text-xl font-bold text-white mb-2">Mesa Carambola</h3>
+                <p class="text-gray-400 mb-6">Por hora</p>
+                <div class="text-5xl font-bold text-primary-500 mb-6">
+                    $12.000
+                    <span class="text-lg text-gray-400 font-normal">/hora</span>
+                </div>
+                <ul class="text-gray-300 space-y-3 mb-8">
+                    <li class="flex items-center justify-center gap-2">
+                        <i class="ri-check-line text-primary-500"></i>
+                        Mesa profesional
+                    </li>
+                    <li class="flex items-center justify-center gap-2">
+                        <i class="ri-check-line text-primary-500"></i>
+                        Tacos premium
+                    </li>
+                    <li class="flex items-center justify-center gap-2">
+                        <i class="ri-check-line text-primary-500"></i>
+                        Bolas de competencia
+                    </li>
+                    <li class="flex items-center justify-center gap-2">
+                        <i class="ri-check-line text-primary-500"></i>
+                        Iluminación especial
+                    </li>
+                </ul>
+                <a href="#contacto" class="btn-neon-filled w-full block text-center">Reservar</a>
+            </div>
+
+            <!-- Eventos -->
+            <div
+                class="glass-card p-8 text-center transition-all duration-300 hover:-translate-y-2"
+                data-aos="fade-up"
+                data-aos-delay="300"
+            >
+                <h3 class="text-xl font-bold text-white mb-2">Evento Privado</h3>
+                <p class="text-gray-400 mb-6">Mínimo 3 horas</p>
+                <div class="text-5xl font-bold text-primary-500 mb-6">
+                    $150.000
+                    <span class="text-lg text-gray-400 font-normal">/evento</span>
+                </div>
+                <ul class="text-gray-300 space-y-3 mb-8">
+                    <li class="flex items-center justify-center gap-2">
+                        <i class="ri-check-line text-primary-500"></i>
+                        Espacio exclusivo
+                    </li>
+                    <li class="flex items-center justify-center gap-2">
+                        <i class="ri-check-line text-primary-500"></i>
+                        Hasta 20 personas
+                    </li>
+                    <li class="flex items-center justify-center gap-2">
+                        <i class="ri-check-line text-primary-500"></i>
+                        3 mesas incluidas
+                    </li>
+                    <li class="flex items-center justify-center gap-2">
+                        <i class="ri-check-line text-primary-500"></i>
+                        Servicio de bar
+                    </li>
+                </ul>
+                <a href="#contacto" class="btn-neon w-full block text-center">Cotizar</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Ubicación y Horarios Section -->
+<section id="ubicacion" class="py-20 lg:py-32 bg-dark-900">
+    <div class="container mx-auto px-4">
+        <div class="text-center mb-16" data-aos="fade-up">
+            <span class="text-primary-500 uppercase tracking-widest text-sm font-semibold">Encuéntranos</span>
+            <h2 class="text-4xl md:text-5xl font-bold font-serif text-white mt-4">
+                Ubicación y <span class="text-primary-500">Horarios</span>
+            </h2>
+            <div class="neon-line w-24 mx-auto mt-6"></div>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <!-- Info -->
+            <div data-aos="fade-right">
+                <div class="glass-card p-8 mb-8">
+                    <div class="flex items-start gap-4 mb-6">
+                        <div class="w-12 h-12 bg-primary-500/20 rounded-xl flex items-center justify-center flex-shrink-0">
+                            <i class="ri-map-pin-line text-2xl text-primary-500"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold text-white mb-2">Dirección</h3>
+                            <p class="text-gray-400">Calle 44 #77-58, Av San Juan</p>
+                            <p class="text-gray-400">Medellín, Colombia</p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start gap-4 mb-6">
+                        <div class="w-12 h-12 bg-primary-500/20 rounded-xl flex items-center justify-center flex-shrink-0">
+                            <i class="ri-time-line text-2xl text-primary-500"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold text-white mb-2">Horario</h3>
+                            <p class="text-gray-400">Lunes a Domingo</p>
+                            <p class="text-primary-400 font-semibold">8:00 AM - 10:00 PM</p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start gap-4">
+                        <div class="w-12 h-12 bg-primary-500/20 rounded-xl flex items-center justify-center flex-shrink-0">
+                            <i class="ri-phone-line text-2xl text-primary-500"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold text-white mb-2">Teléfono</h3>
+                            <p class="text-gray-400">WhatsApp disponible</p>
+                            <a href="#contacto" class="text-primary-400 font-semibold hover:text-primary-300 transition-colors">
+                                Contáctanos
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <a
+                    href="https://maps.google.com/?q=Calle+44+77-58+Medellin"
+                    target="_blank"
+                    class="btn-neon-filled inline-flex items-center gap-2"
+                >
+                    <i class="ri-map-2-line"></i>
+                    Ver en Google Maps
+                </a>
+            </div>
+
+            <!-- Mapa -->
+            <div data-aos="fade-left" class="rounded-2xl overflow-hidden neon-border">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.2!2d-75.58!3d6.25!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNsKwMTUnMDAuMCJOIDc1wrAzNCc0OC4wIlc!5e0!3m2!1ses!2sco!4v1234567890"
+                    width="100%"
+                    height="400"
+                    style="border:0; filter: grayscale(100%) invert(92%) contrast(83%);"
+                    allowfullscreen=""
+                    loading="lazy"
+                    class="rounded-2xl"
+                ></iframe>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Contacto Section -->
+<section id="contacto" class="py-20 lg:py-32 bg-dark-950 relative overflow-hidden">
+    <div class="absolute inset-0 opacity-30">
+        <div class="absolute bottom-0 left-0 w-96 h-96 bg-primary-500/20 rounded-full blur-3xl"></div>
+        <div class="absolute top-0 right-0 w-96 h-96 bg-primary-700/20 rounded-full blur-3xl"></div>
+    </div>
+
+    <div class="container mx-auto px-4 relative z-10">
+        <div class="text-center mb-16" data-aos="fade-up">
+            <span class="text-primary-500 uppercase tracking-widest text-sm font-semibold">Contacto</span>
+            <h2 class="text-4xl md:text-5xl font-bold font-serif text-white mt-4">
+                ¿Listo para <span class="text-primary-500">jugar</span>?
+            </h2>
+            <div class="neon-line w-24 mx-auto mt-6"></div>
+            <p class="text-gray-400 mt-6 max-w-2xl mx-auto">
+                Reserva tu mesa ahora y vive la mejor experiencia de billar en Medellín
+            </p>
+        </div>
+
+        <div class="max-w-4xl mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- WhatsApp CTA -->
+                <div
+                    class="glass-card p-8 text-center"
+                    data-aos="fade-up"
+                    data-aos-delay="100"
+                >
+                    <div class="w-20 h-20 bg-green-500/20 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="ri-whatsapp-line text-5xl text-green-500"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-white mb-4">WhatsApp</h3>
+                    <p class="text-gray-400 mb-6">
+                        Escríbenos directamente para reservar tu mesa o resolver cualquier duda
+                    </p>
+                    <a
+                        href="https://wa.me/573001234567?text=Hola,%20quiero%20reservar%20una%20mesa%20en%20Billares%20la%2078"
+                        target="_blank"
+                        class="inline-flex items-center gap-2 bg-green-500 hover:bg-green-600 text-white px-8 py-4 rounded-full font-semibold transition-all duration-300 hover:shadow-[0_0_30px_rgba(34,197,94,0.5)]"
+                    >
+                        <i class="ri-whatsapp-line text-xl"></i>
+                        Chatear Ahora
+                    </a>
+                </div>
+
+                <!-- Llamar -->
+                <div
+                    class="glass-card p-8 text-center"
+                    data-aos="fade-up"
+                    data-aos-delay="200"
+                >
+                    <div class="w-20 h-20 bg-primary-500/20 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="ri-phone-line text-5xl text-primary-500"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-white mb-4">Llámanos</h3>
+                    <p class="text-gray-400 mb-6">
+                        Comunícate con nosotros para información sobre torneos y eventos especiales
+                    </p>
+                    <a
+                        href="tel:+573001234567"
+                        class="btn-neon inline-flex items-center gap-2"
+                    >
+                        <i class="ri-phone-line text-xl"></i>
+                        Llamar Ahora
+                    </a>
+                </div>
+            </div>
+
+            <!-- Social Media -->
+            <div class="text-center mt-12" data-aos="fade-up" data-aos-delay="300">
+                <p class="text-gray-400 mb-4">Síguenos en redes sociales</p>
+                <div class="flex justify-center gap-4">
+                    <a
+                        href="#"
+                        class="w-12 h-12 bg-dark-800 rounded-full flex items-center justify-center text-gray-400 hover:bg-primary-500 hover:text-dark-950 transition-all duration-300"
+                    >
+                        <i class="ri-instagram-line text-xl"></i>
+                    </a>
+                    <a
+                        href="#"
+                        class="w-12 h-12 bg-dark-800 rounded-full flex items-center justify-center text-gray-400 hover:bg-primary-500 hover:text-dark-950 transition-all duration-300"
+                    >
+                        <i class="ri-facebook-fill text-xl"></i>
+                    </a>
+                    <a
+                        href="#"
+                        class="w-12 h-12 bg-dark-800 rounded-full flex items-center justify-center text-gray-400 hover:bg-primary-500 hover:text-dark-950 transition-all duration-300"
+                    >
+                        <i class="ri-tiktok-line text-xl"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,290 @@
+<div class="py-[60px] md:py-[80px] lg:py-[100px] xl:py-[120px]">
+    <div class="container mx-auto px-[12px] 2xl:px-0">
+        <div class="mb-[30px] md:mb-[40px] lg:mb-[50px] text-center">
+            <span class="block uppercase font-medium text-[14px] md:text-[15px] lg:text-[16px] text-[#0a64bc] mb-[7px] md:mb-[8px] lg:mb-[10px]" data-aos="fade-up" data-aos-duration="500" data-aos-delay="100">
+                Thinking About the future
+            </span>
+            <h2 class="text-black font-bold font-serif text-[28px] md:text-[34px] lg:text-[38px] xl:text-[42px] ml-auto mr-auto lg:max-w-[650px] leading-[1.2]" data-aos="fade-up" data-aos-duration="500" data-aos-delay="200">
+                Find out about our Saving and Investments solutions
+            </h2>
+        </div>
+        <div class="bg-[#0a64bc] rounded-[20px] relative z-[1] before:absolute before:-z-[1] before:left-0 before:top-0 before:bottom-0 before:bg-white before:w-[50%] before:rounded-[20px] before:hidden lg:before:block">
+            <div class="grid grid-cols-1 lg:grid-cols-2 lg:gap-[25px]">
+                <div class="self-center py-[25px] px-[15px] md:py-[40px] lg:py-[80px] xl:py-[100px] sm:px-[25px] md:px-[40px] lg:px-[25px] xl:px-[50px] 2xl:px-[60px] bg-white lg:bg-transparent">
+                    <ul>
+                        <li
+                            class="border border-[#d9d9d9] text-black cursor-pointer flex rounded-[100px] relative py-[10px] px-[15px] md:py-[15px] md:px-[45px] mb-[10px] md:mb-[20px] last:mb-0"
+                            [ngClass]="{'active text-white border-[#0a64bc] bg-[#0a64bc]': currentTab === 'tab1'}"
+                            (click)="switchTab($event, 'tab1')"
+                            data-aos="fade-up" data-aos-duration="500" data-aos-delay="100"
+                        >
+                            <div class="self-center mr-[12px] md:mr-[20px]">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 34 34" fill="none">
+                                    <g clip-path="url(#clip0_224_10602)">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M3.43164 23.7906C3.48477 24.1506 3.23594 24.4847 2.87768 24.5374C2.5161 24.5902 2.18433 24.341 2.13127 23.981C2.07822 23.6218 2.32697 23.287 2.68524 23.2343C3.04682 23.1822 3.3819 23.431 3.43164 23.7906ZM21.3561 9.74314C23.1884 11.7764 24.5558 13.542 25.4579 15.126C27.1688 18.1299 26.7453 21.158 25.068 23.3745L23.5724 24.2456C23.17 24.4799 22.76 24.6285 22.3362 24.7011C22.513 24.4662 22.6498 24.1851 22.7378 23.859C23.0705 22.6259 22.3325 21.4065 21.1476 20.9959L21.0709 20.9694L20.9911 20.9548C20.7173 20.9046 20.4451 20.848 20.1744 20.7858C20.4162 20.4624 20.5581 20.064 20.5467 19.5842C20.5447 19.5017 20.5399 19.429 20.5324 19.367C20.4366 18.5769 20.0091 18.0626 19.4423 17.7204C18.9445 17.4198 18.3474 17.2701 17.8 17.1802C17.4052 17.1154 16.9894 17.0057 16.6849 16.8069C16.4489 16.6528 16.2797 16.4298 16.2639 16.1037C16.2467 15.7508 16.4008 15.4662 16.6435 15.2689C16.8336 15.1143 17.0762 15.0069 17.3392 14.954C17.445 14.9327 17.5539 14.9204 17.6638 14.9175C17.6754 14.9182 17.6871 14.9186 17.699 14.9186C17.7132 14.9186 17.7273 14.918 17.7413 14.917C17.8866 14.9192 18.033 14.9378 18.1761 14.9741C18.6158 15.0855 19.0161 15.3753 19.2269 15.8774C19.3532 16.1785 19.6998 16.3203 20.0009 16.1939C20.302 16.0676 20.4437 15.721 20.3174 15.4199C19.9462 14.5358 19.2395 14.025 18.4626 13.828C18.4056 13.8136 18.3481 13.801 18.2904 13.79V13.3317C18.2904 13.005 18.0256 12.7402 17.699 12.7402C17.3723 12.7402 17.1075 13.005 17.1075 13.3317V13.7988C16.6594 13.8892 16.2386 14.0783 15.8995 14.3539C15.3786 14.7775 15.0483 15.3924 15.0855 16.1592C15.1229 16.9296 15.5074 17.4463 16.0426 17.7958C16.5092 18.1004 17.0822 18.2579 17.6106 18.3447C18.035 18.4143 18.4881 18.5245 18.8324 18.7324C19.1077 18.8986 19.3146 19.1415 19.3588 19.5056C19.3646 19.5541 19.3678 19.5894 19.3683 19.6119C19.3752 19.9014 19.2367 20.1219 19.0288 20.2798C18.9582 20.3333 18.8799 20.3809 18.796 20.4227C17.2682 19.9733 15.8489 19.3908 14.3402 18.9014C12.7652 18.3903 11.2974 18.9686 9.93667 19.7569L9.0099 20.2939C8.71499 18.677 8.98068 16.8975 9.98952 15.1261C10.8917 13.5421 12.2591 11.7764 14.0913 9.74327C14.3212 9.81817 14.5664 9.85882 14.8207 9.85882H20.6268C20.8811 9.85875 21.1262 9.81804 21.3561 9.74314ZM14.8206 8.79625H20.6267C21.3426 8.79625 21.9282 8.21055 21.9282 7.49489C21.9282 6.77903 21.3427 6.19346 20.6267 6.19346H14.8206C14.1048 6.19346 13.5192 6.77903 13.5192 7.49482C13.5191 8.21061 14.1048 8.79625 14.8206 8.79625ZM14.7733 5.13149L13.7044 4.06255C13.1843 3.54245 13.1843 2.69132 13.7044 2.17123C14.1468 1.72883 14.847 1.65406 15.3735 1.99193C15.569 2.11744 15.7936 2.13743 16.0082 2.04864C16.2227 1.95973 16.3673 1.78687 16.4169 1.55983C16.548 0.959448 17.0855 0.506358 17.7238 0.506226C18.3505 0.506226 18.8971 0.948026 19.0307 1.55983C19.0803 1.78687 19.2249 1.95973 19.4395 2.04864C19.6541 2.13756 19.8786 2.11744 20.074 1.99193C20.5912 1.66003 21.2918 1.71987 21.7432 2.1711V2.17123C22.2633 2.69132 22.2633 3.54245 21.7432 4.06255L20.6742 5.13149C20.6585 5.13116 20.6427 5.13089 20.6268 5.13089H14.8207C14.8048 5.13089 14.789 5.13122 14.7733 5.13149ZM5.55272 23.5246L9.09696 29.7788L10.4305 29.0092C10.5599 28.9342 10.7126 28.9143 10.8585 28.9531L19.2338 30.7977C20.3418 31.094 21.3835 30.9476 22.3356 30.3625L32.506 24.0416C33.0601 23.7019 33.2292 22.7046 32.8478 22.0661C32.2937 21.1412 30.8275 21.2503 28.9233 22.3587L24.1072 25.1637C23.1053 25.7489 22.0238 25.9383 20.8063 25.7433C20.584 25.7074 20.3651 25.6692 20.1495 25.6278C20.103 25.6245 16.0524 24.5715 15.588 24.4464C15.2862 24.3661 15.107 24.0576 15.1899 23.7581C15.2696 23.4576 15.5781 23.2797 15.8766 23.36C16.351 23.487 19.2239 24.3014 20.3021 24.5112C20.8528 24.5463 21.493 24.393 21.712 23.5823C21.8912 22.9175 21.4997 22.2424 20.7997 21.9999C18.8325 21.6396 16.9316 20.9532 15.4056 20.4006C14.8714 20.2078 14.4103 20.0413 14.0122 19.9119C12.7582 19.5053 11.5673 20.039 10.4692 20.6763L5.55272 23.5246ZM8.96846 31.8457L3.54772 22.2672C3.49466 22.1737 3.4084 22.1066 3.30222 22.0771C3.26576 22.0675 3.2293 22.0625 3.19271 22.0625C3.12312 22.0625 3.05671 22.0801 2.99701 22.114L1.15251 23.1573C0.956813 23.2678 0.890407 23.5155 0.999845 23.7096L6.42059 33.288C6.53009 33.4828 6.77891 33.5511 6.97129 33.4413L8.81579 32.3977C8.9087 32.3449 8.97504 32.2577 9.00485 32.1532C9.0348 32.0483 9.02152 31.9392 8.96846 31.8457Z" fill="black"/>
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_224_10602">
+                                            <rect width="34" height="34" fill="white"/>
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                            </div>
+                            <h3 class="self-center font-serif font-bold text-[18px] md:text-[20px] lg:text-[22px] leading-none">
+                                Investment Funds
+                            </h3>
+                            <div class="absolute right-[15px] md:right-[45px] top-1/2 -translate-y-2/4">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="10" height="16" viewBox="0 0 10 16" fill="none">
+                                    <path d="M1.56254 15.5625C1.38671 15.5625 1.21071 15.4953 1.07648 15.361C0.80784 15.0924 0.80784 14.6574 1.07648 14.3889L7.46542 7.99998L1.07648 1.61104C0.80784 1.3424 0.80784 0.907385 1.07648 0.638916C1.34512 0.370447 1.78014 0.370275 2.04861 0.638916L8.92361 7.51392C9.19225 7.78256 9.19225 8.21757 8.92361 8.48604L2.04861 15.361C1.91437 15.4953 1.73837 15.5625 1.56254 15.5625Z" fill="black"/>
+                                </svg>
+                            </div>
+                        </li>
+                        <li
+                            class="border border-[#d9d9d9] text-black cursor-pointer flex rounded-[100px] relative py-[10px] px-[15px] md:py-[15px] md:px-[45px] mb-[10px] md:mb-[20px] last:mb-0"
+                            [ngClass]="{'active text-white border-[#0a64bc] bg-[#0a64bc]': currentTab === 'tab2'}"
+                            (click)="switchTab($event, 'tab2')"
+                            data-aos="fade-up" data-aos-duration="500" data-aos-delay="200"
+                        >
+                            <div class="self-center mr-[12px] md:mr-[20px]">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="31" height="31" viewBox="0 0 31 31" fill="none">
+                                    <g clip-path="url(#clip0_301_4871)">
+                                        <path d="M16.109 13.997L11.797 9.51796L1.426 20.058L0 18.656L11.812 6.65096L16.166 11.173L23.656 4.00096L21.51 1.85596H27.113V7.45696L25.07 5.41496L16.109 13.997ZM4.962 28.606H11.712V19.106H4.962V28.606ZM14.337 28.606H21.087V16.106H14.337V28.606ZM23.712 9.85596V28.606H30.462V9.85596H23.712Z" fill="black"/>
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_301_4871">
+                                            <rect width="30.462" height="30.461" fill="white"/>
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                            </div>
+                            <h3 class="self-center font-serif font-bold text-[18px] md:text-[20px] lg:text-[22px] leading-none">
+                                Stocks
+                            </h3>
+                            <div class="absolute right-[15px] md:right-[45px] top-1/2 -translate-y-2/4">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="10" height="16" viewBox="0 0 10 16" fill="none">
+                                    <path d="M1.56254 15.5625C1.38671 15.5625 1.21071 15.4953 1.07648 15.361C0.80784 15.0924 0.80784 14.6574 1.07648 14.3889L7.46542 7.99998L1.07648 1.61104C0.80784 1.3424 0.80784 0.907385 1.07648 0.638916C1.34512 0.370447 1.78014 0.370275 2.04861 0.638916L8.92361 7.51392C9.19225 7.78256 9.19225 8.21757 8.92361 8.48604L2.04861 15.361C1.91437 15.4953 1.73837 15.5625 1.56254 15.5625Z" fill="black"/>
+                                </svg>
+                            </div>
+                        </li>
+                        <li
+                            class="border border-[#d9d9d9] text-black cursor-pointer flex rounded-[100px] relative py-[10px] px-[15px] md:py-[15px] md:px-[45px] mb-[10px] md:mb-[20px] last:mb-0"
+                            [ngClass]="{'active text-white border-[#0a64bc] bg-[#0a64bc]': currentTab === 'tab3'}"
+                            (click)="switchTab($event, 'tab3')"
+                            data-aos="fade-up" data-aos-duration="500" data-aos-delay="300"
+                        >
+                            <div class="self-center mr-[12px] md:mr-[20px]">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 34 34" fill="none">
+                                    <g clip-path="url(#clip0_301_4889)">
+                                        <path d="M17.0003 6.90637C11.4057 6.90637 6.86035 11.4593 6.86035 17.0464C6.86035 22.6332 11.4132 27.1861 17.0003 27.1861C22.5871 27.1861 27.14 22.6332 27.14 17.0464C27.14 11.4593 22.595 6.90637 17.0003 6.90637ZM22.0856 14.6156L15.9661 20.3875C15.8531 20.4984 15.7002 20.5596 15.5417 20.5575C15.3759 20.559 15.2167 20.4921 15.1019 20.3721L11.8994 17.0849C11.6649 16.8414 11.6701 16.454 11.9115 16.2171C12.1527 15.9802 12.5397 15.9817 12.7793 16.2204L15.5574 19.0756L21.2367 13.7203C21.4839 13.4858 21.8743 13.4964 22.1088 13.7435C22.3433 13.9907 22.3327 14.3811 22.0856 14.6156Z" fill="black"/>
+                                        <path d="M31.5615 20.7426L34.0001 17.0464L31.5615 13.3499C31.4901 13.2402 31.4548 13.1106 31.4611 12.9795L31.708 8.55018L27.7649 6.55167C27.6483 6.49289 27.5536 6.39824 27.4948 6.28158L25.5039 2.3382L21.0746 2.58508C20.9434 2.59141 20.8138 2.55644 20.7041 2.4847L17.0001 0.0463867L13.3036 2.4847C13.1938 2.55644 13.0642 2.59141 12.9334 2.58508L8.5038 2.3382L6.50528 6.28158C6.4465 6.39824 6.35185 6.49289 6.23519 6.55167L2.29181 8.54235L2.53869 12.9719C2.54502 13.1028 2.51005 13.2324 2.43861 13.3424L0 17.0464L2.43861 20.7426C2.51005 20.8527 2.54502 20.982 2.53869 21.1131L2.29181 25.5424L6.23519 27.5334C6.35185 27.5922 6.4465 27.6868 6.50528 27.8035L8.49626 31.7469L12.9256 31.4997H12.9563C13.0766 31.5012 13.1944 31.5358 13.296 31.6001L16.9922 34.0387L20.6887 31.6001C20.7984 31.5286 20.9281 31.4936 21.0589 31.4997L25.4885 31.7469L27.4795 27.8035C27.5382 27.6868 27.6329 27.5922 27.7496 27.5334L31.6926 25.5424L31.4458 21.1131C31.4524 20.9817 31.4922 20.8542 31.5615 20.7426ZM17.0001 28.4208C10.7263 28.4208 5.62539 23.3199 5.62539 17.0464C5.62539 10.7727 10.7263 5.67178 17.0001 5.67178C23.2738 5.67178 28.3744 10.7727 28.3744 17.0464C28.3744 23.3199 23.2738 28.4208 17.0001 28.4208Z" fill="black"/>
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_301_4889">
+                                            <rect width="34" height="34" fill="white"/>
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                            </div>
+                            <h3 class="self-center font-serif font-bold text-[18px] md:text-[20px] lg:text-[22px] leading-none">
+                                Certificate
+                            </h3>
+                            <div class="absolute right-[15px] md:right-[45px] top-1/2 -translate-y-2/4">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="10" height="16" viewBox="0 0 10 16" fill="none">
+                                    <path d="M1.56254 15.5625C1.38671 15.5625 1.21071 15.4953 1.07648 15.361C0.80784 15.0924 0.80784 14.6574 1.07648 14.3889L7.46542 7.99998L1.07648 1.61104C0.80784 1.3424 0.80784 0.907385 1.07648 0.638916C1.34512 0.370447 1.78014 0.370275 2.04861 0.638916L8.92361 7.51392C9.19225 7.78256 9.19225 8.21757 8.92361 8.48604L2.04861 15.361C1.91437 15.4953 1.73837 15.5625 1.56254 15.5625Z" fill="black"/>
+                                </svg>
+                            </div>
+                        </li>
+                        <li
+                            class="border border-[#d9d9d9] text-black cursor-pointer flex rounded-[100px] relative py-[10px] px-[15px] md:py-[15px] md:px-[45px] mb-[10px] md:mb-[20px] last:mb-0"
+                            [ngClass]="{'active text-white border-[#0a64bc] bg-[#0a64bc]': currentTab === 'tab4'}"
+                            (click)="switchTab($event, 'tab4')"
+                            data-aos="fade-up" data-aos-duration="500" data-aos-delay="400"
+                        >
+                            <div class="self-center mr-[12px] md:mr-[20px]">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 34 34" fill="none">
+                                    <path d="M32.0619 24.6058C31.0833 23.4977 29.3855 23.3924 28.2775 24.3709C27.9252 24.682 27.5625 24.9751 27.1916 25.252L24.8591 22.0865C25.9112 21.6108 26.6455 20.552 26.6455 19.3242C26.6455 17.6532 25.2861 16.2937 23.6151 16.2937H20.6907V13.2567V13.2185H23.2318C23.6501 13.2185 24.0433 13.3783 24.341 13.6501C24.5056 13.8003 24.6414 13.9845 24.7353 14.1959C24.9006 14.568 25.2655 14.7891 25.648 14.7891C25.7834 14.7891 25.9209 14.7614 26.0526 14.7029C26.5563 14.4792 26.7834 13.8895 26.5597 13.3857C25.9761 12.0715 24.6699 11.2223 23.2319 11.2223H11.4999L9.43176 3.71974C9.07237 2.41599 8.22682 1.33025 7.05083 0.662532C5.87484 -0.00531541 4.50927 -0.175116 3.20545 0.184341C2.67406 0.330833 2.36202 0.880411 2.50851 1.41173L7.25517 18.6313C7.60479 19.8999 8.42584 20.9463 9.49578 21.6035L6.80739 25.252C6.43657 24.9751 6.07386 24.682 5.72165 24.3709C5.18482 23.8968 4.49539 23.6599 3.78072 23.7045C3.06599 23.7489 2.41129 24.069 1.93722 24.6058C1.46315 25.1427 1.22654 25.832 1.2709 26.5468C1.31526 27.2615 1.6354 27.9162 2.17216 28.3902C6.26863 32.0077 11.5344 34 16.9996 34C22.4647 34 27.7305 32.0077 31.8269 28.3902C32.3638 27.9161 32.6838 27.2614 32.7283 26.5467C32.7726 25.832 32.536 25.1427 32.0619 24.6058ZM18.6946 13.2185V16.2938H12.8979L12.0502 13.2185H18.6946ZM8.47644 26.3519L11.457 22.307C11.6825 22.3379 11.9116 22.3547 12.1439 22.3547H22.5773L25.5227 26.3519C20.2659 29.3869 13.7331 29.3868 8.47644 26.3519Z" fill="black"/>
+                                </svg>
+                            </div>
+                            <h3 class="self-center font-serif font-bold text-[18px] md:text-[20px] lg:text-[22px] leading-none">
+                                Retirement
+                            </h3>
+                            <div class="absolute right-[15px] md:right-[45px] top-1/2 -translate-y-2/4">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="10" height="16" viewBox="0 0 10 16" fill="none">
+                                    <path d="M1.56254 15.5625C1.38671 15.5625 1.21071 15.4953 1.07648 15.361C0.80784 15.0924 0.80784 14.6574 1.07648 14.3889L7.46542 7.99998L1.07648 1.61104C0.80784 1.3424 0.80784 0.907385 1.07648 0.638916C1.34512 0.370447 1.78014 0.370275 2.04861 0.638916L8.92361 7.51392C9.19225 7.78256 9.19225 8.21757 8.92361 8.48604L2.04861 15.361C1.91437 15.4953 1.73837 15.5625 1.56254 15.5625Z" fill="black"/>
+                                </svg>
+                            </div>
+                        </li>
+                        <li
+                            class="border border-[#d9d9d9] text-black cursor-pointer flex rounded-[100px] relative py-[10px] px-[15px] md:py-[15px] md:px-[45px] mb-[10px] md:mb-[20px] last:mb-0"
+                            [ngClass]="{'active text-white border-[#0a64bc] bg-[#0a64bc]': currentTab === 'tab5'}"
+                            (click)="switchTab($event, 'tab5')"
+                            data-aos="fade-up" data-aos-duration="500" data-aos-delay="500"
+                        >
+                            <div class="self-center mr-[12px] md:mr-[20px]">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 34 34" fill="none">
+                                    <path d="M26.9167 3.1875H7.08333C4.93 3.1875 3.1875 4.93 3.1875 7.08333V19.8333C3.1875 21.9867 4.93 23.7292 7.08333 23.7292H11.305C10.0158 22.3408 9.20833 20.4708 9.20833 18.4167C9.20833 14.1242 12.7075 10.625 17 10.625C21.2925 10.625 24.7917 14.1242 24.7917 18.4167C24.7917 20.4708 23.9842 22.3408 22.695 23.7292H26.9167C29.07 23.7292 30.8125 21.9867 30.8125 19.8333V7.08333C30.8125 4.93 29.07 3.1875 26.9167 3.1875ZM24.0833 8.14583H9.91667C9.33017 8.14583 8.85417 7.66983 8.85417 7.08333C8.85417 6.49683 9.33017 6.02083 9.91667 6.02083H24.0833C24.6698 6.02083 25.1458 6.49683 25.1458 7.08333C25.1458 7.66983 24.6698 8.14583 24.0833 8.14583ZM22.6667 18.4167C22.6667 21.5461 20.1294 24.0833 17 24.0833C13.8706 24.0833 11.3333 21.5461 11.3333 18.4167C11.3333 15.2872 13.8706 12.75 17 12.75C20.1294 12.75 22.6667 15.2872 22.6667 18.4167ZM17 26.2083C18.5725 26.2083 20.0317 25.7408 21.25 24.9333V29.2017C21.25 30.1693 20.3022 30.8522 19.3857 30.5462L17.4477 29.9002C17.1572 29.8038 16.8427 29.8038 16.5523 29.9002L14.6143 30.5462C13.6963 30.8522 12.75 30.1693 12.75 29.2017V24.9333C13.9683 25.7408 15.4275 26.2083 17 26.2083Z" fill="black"/>
+                                </svg>
+                            </div>
+                            <h3 class="self-center font-serif font-bold text-[18px] md:text-[20px] lg:text-[22px] leading-none">
+                                Bonds
+                            </h3>
+                            <div class="absolute right-[15px] md:right-[45px] top-1/2 -translate-y-2/4">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="10" height="16" viewBox="0 0 10 16" fill="none">
+                                    <path d="M1.56254 15.5625C1.38671 15.5625 1.21071 15.4953 1.07648 15.361C0.80784 15.0924 0.80784 14.6574 1.07648 14.3889L7.46542 7.99998L1.07648 1.61104C0.80784 1.3424 0.80784 0.907385 1.07648 0.638916C1.34512 0.370447 1.78014 0.370275 2.04861 0.638916L8.92361 7.51392C9.19225 7.78256 9.19225 8.21757 8.92361 8.48604L2.04861 15.361C1.91437 15.4953 1.73837 15.5625 1.56254 15.5625Z" fill="black"/>
+                                </svg>
+                            </div>
+                        </li>
+                        <li
+                            class="border border-[#d9d9d9] text-black cursor-pointer flex rounded-[100px] relative py-[10px] px-[15px] md:py-[15px] md:px-[45px] mb-[10px] md:mb-[20px] last:mb-0"
+                            [ngClass]="{'active text-white border-[#0a64bc] bg-[#0a64bc]': currentTab === 'tab6'}"
+                            (click)="switchTab($event, 'tab6')"
+                            data-aos="fade-up" data-aos-duration="500" data-aos-delay="600"
+                        >
+                            <div class="self-center mr-[12px] md:mr-[20px]">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 34 34" fill="none">
+                                    <g clip-path="url(#clip0_301_4913)">
+                                        <path d="M19.7309 13.3131C19.1479 12.3556 18.1317 11.7839 17.0125 11.7839C16.116 11.7839 15.2868 12.1466 14.6777 12.8052C14.133 13.3941 13.833 14.1606 13.833 14.9635C13.833 16.7167 15.2594 18.1431 17.0126 18.1431C18.7658 18.1431 20.1922 16.7167 20.1922 14.9635C20.1922 14.6371 20.1431 14.3155 20.0463 14.0079C19.9699 13.765 19.8637 13.5313 19.7309 13.3131Z" fill="black"/>
+                                        <path d="M17.8199 20.2051H16.2043C14.4473 20.2051 12.8329 21.0886 11.8859 22.5685C11.3568 23.3951 11.0771 24.3507 11.0771 25.3323V28.8739H22.9472V25.3323C22.9472 24.3508 22.6675 23.3951 22.1385 22.5685C21.1913 21.0886 19.5769 20.2051 17.8199 20.2051Z" fill="black"/>
+                                        <path d="M10.8659 14.4152C13.3301 13.3938 14.4997 10.5681 13.4783 8.1039C12.4569 5.63968 9.63118 4.47006 7.16695 5.49149C4.70273 6.51291 3.53311 9.33859 4.55453 11.8028C5.57596 14.267 8.40164 15.4367 10.8659 14.4152Z" fill="black"/>
+                                        <path d="M9.07733 25.3322C9.07733 23.9678 9.46607 22.6393 10.2015 21.4903C11.0039 20.2366 12.151 19.2917 13.4772 18.7441C12.6377 17.9585 12.0598 16.8977 11.8875 15.7071C11.1293 16.3638 10.2228 16.7839 9.01233 16.7839C7.47467 16.7839 6.05427 16.2729 4.91153 15.412C3.44047 16.0371 2.1684 17.0955 1.27433 18.4925C0.440667 19.7951 0 21.301 0 22.8475V26.7839H9.07733V25.3322Z" fill="black"/>
+                                        <path d="M28.3983 13.3707C30.2838 11.4852 30.2838 8.42816 28.3983 6.54266C26.5128 4.65715 23.4558 4.65715 21.5703 6.54266C19.6848 8.42816 19.6848 11.4852 21.5703 13.3707C23.4558 15.2562 26.5128 15.2562 28.3983 13.3707Z" fill="black"/>
+                                        <path d="M32.726 18.4925C31.8319 17.0955 30.5599 16.0371 29.0888 15.412C27.9461 16.2729 26.5257 16.7839 24.9881 16.7839C23.7837 16.7839 22.8901 16.3313 22.1461 15.6422C21.9858 16.8591 21.4026 17.9444 20.5479 18.7441C21.8741 19.2917 23.0213 20.2367 23.8235 21.4903C24.559 22.6395 24.9477 23.968 24.9477 25.3323V26.7839H34.0003V22.8475C34.0003 21.3011 33.5597 19.7951 32.726 18.4925Z" fill="black"/>
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_301_4913">
+                                            <rect width="34" height="34" fill="white"/>
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                            </div>
+                            <h3 class="self-center font-serif font-bold text-[18px] md:text-[20px] lg:text-[22px] leading-none">
+                                Warrants
+                            </h3>
+                            <div class="absolute right-[15px] md:right-[45px] top-1/2 -translate-y-2/4">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="10" height="16" viewBox="0 0 10 16" fill="none">
+                                    <path d="M1.56254 15.5625C1.38671 15.5625 1.21071 15.4953 1.07648 15.361C0.80784 15.0924 0.80784 14.6574 1.07648 14.3889L7.46542 7.99998L1.07648 1.61104C0.80784 1.3424 0.80784 0.907385 1.07648 0.638916C1.34512 0.370447 1.78014 0.370275 2.04861 0.638916L8.92361 7.51392C9.19225 7.78256 9.19225 8.21757 8.92361 8.48604L2.04861 15.361C1.91437 15.4953 1.73837 15.5625 1.56254 15.5625Z" fill="black"/>
+                                </svg>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="self-center py-[25px] md:py-[40px] lg:py-[25px] px-[15px] sm:px-[25px] md:px-[40px] lg:px-[25px] xl:px-[50px] 2xl:px-[80px]">
+                    <div
+                        id="tab1"
+                        *ngIf="currentTab === 'tab1'"
+                        data-aos="fade-up" data-aos-duration="500" data-aos-delay="100"
+                    >
+                        <h3 class="text-white font-bold font-serif text-[28px] md:text-[34px] lg:text-[38px] xl:text-[42px] leading-[1.2] mb-[12px]">
+                            Investment Funds
+                        </h3>
+                        <p class="text-[14px] md:text-[15px] text-[#f9f9f9] leading-[1.7] transition-all group-hover:text-[#4c4c4c]">
+                            Investment funds, often referred to as mutual funds or simply funds, have become a cornerstone of modern investment strategies.
+                        </p>
+                        <img src="assets/images/investments-solutions/is1.jpg" class="rounded-[20px] my-[15px] md:my-[20px] lg:my-[25px]" alt="investments-solutions-image">
+                        <p class="text-[14px] md:text-[15px] text-[#f9f9f9] leading-[1.7] transition-all group-hover:text-[#4c4c4c]">
+                            Investment funds are pools of money collected from multiple investors with a common goal: to generate returns by investing.
+                        </p>
+                        <a routerLink="/about" class="mt-[22px] md:mt-[27px] lg:mt-[25px] 2xl:mt-[35px] py-[11px] md:py-[12px] px-[30px] md:px-[40px] inline-block text-white text-[13px] md:text-[14px] font-medium uppercase border rounded-full transition-all hover:bg-white hover:text-[#0a64bc]">
+                            Learn More
+                        </a>
+                    </div>
+                    <div
+                        id="tab2"
+                        *ngIf="currentTab === 'tab2'"
+                        data-aos="fade-up" data-aos-duration="500" data-aos-delay="100"
+                    >
+                        <h3 class="text-white font-bold font-serif text-[28px] md:text-[34px] lg:text-[38px] xl:text-[42px] leading-[1.2] mb-[12px]">
+                            Stocks
+                        </h3>
+                        <p class="text-[14px] md:text-[15px] text-[#f9f9f9] leading-[1.7] transition-all group-hover:text-[#4c4c4c]">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.
+                        </p>
+                        <img src="assets/images/investments-solutions/is2.jpg" class="rounded-[20px] my-[15px] md:my-[20px] lg:my-[25px]" alt="investments-solutions-image">
+                        <p class="text-[14px] md:text-[15px] text-[#f9f9f9] leading-[1.7] transition-all group-hover:text-[#4c4c4c]">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.
+                        </p>
+                        <a routerLink="/about" class="mt-[22px] md:mt-[27px] lg:mt-[25px] 2xl:mt-[35px] py-[11px] md:py-[12px] px-[30px] md:px-[40px] inline-block text-white text-[13px] md:text-[14px] font-medium uppercase border rounded-full transition-all hover:bg-white hover:text-[#0a64bc]">
+                            Learn More
+                        </a>
+                    </div>
+                    <div
+                        id="tab3"
+                        *ngIf="currentTab === 'tab3'"
+                        data-aos="fade-up" data-aos-duration="500" data-aos-delay="100"
+                    >
+                        <h3 class="text-white font-bold font-serif text-[28px] md:text-[34px] lg:text-[38px] xl:text-[42px] leading-[1.2] mb-[12px]">
+                            Certificate
+                        </h3>
+                        <p class="text-[14px] md:text-[15px] text-[#f9f9f9] leading-[1.7] transition-all group-hover:text-[#4c4c4c]">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.
+                        </p>
+                        <img src="assets/images/investments-solutions/is3.jpg" class="rounded-[20px] my-[15px] md:my-[20px] lg:my-[25px]" alt="investments-solutions-image">
+                        <p class="text-[14px] md:text-[15px] text-[#f9f9f9] leading-[1.7] transition-all group-hover:text-[#4c4c4c]">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.
+                        </p>
+                        <a routerLink="/about" class="mt-[22px] md:mt-[27px] lg:mt-[25px] 2xl:mt-[35px] py-[11px] md:py-[12px] px-[30px] md:px-[40px] inline-block text-white text-[13px] md:text-[14px] font-medium uppercase border rounded-full transition-all hover:bg-white hover:text-[#0a64bc]">
+                            Learn More
+                        </a>
+                    </div>
+                    <div
+                        id="tab4"
+                        *ngIf="currentTab === 'tab4'"
+                        data-aos="fade-up" data-aos-duration="500" data-aos-delay="100"
+                    >
+                        <h3 class="text-white font-bold font-serif text-[28px] md:text-[34px] lg:text-[38px] xl:text-[42px] leading-[1.2] mb-[12px]">
+                            Retirement
+                        </h3>
+                        <p class="text-[14px] md:text-[15px] text-[#f9f9f9] leading-[1.7] transition-all group-hover:text-[#4c4c4c]">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.
+                        </p>
+                        <img src="assets/images/investments-solutions/is4.jpg" class="rounded-[20px] my-[15px] md:my-[20px] lg:my-[25px]" alt="investments-solutions-image">
+                        <p class="text-[14px] md:text-[15px] text-[#f9f9f9] leading-[1.7] transition-all group-hover:text-[#4c4c4c]">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.
+                        </p>
+                        <a routerLink="/about" class="mt-[22px] md:mt-[27px] lg:mt-[25px] 2xl:mt-[35px] py-[11px] md:py-[12px] px-[30px] md:px-[40px] inline-block text-white text-[13px] md:text-[14px] font-medium uppercase border rounded-full transition-all hover:bg-white hover:text-[#0a64bc]">
+                            Learn More
+                        </a>
+                    </div>
+                    <div
+                        id="tab5"
+                        *ngIf="currentTab === 'tab5'"
+                        data-aos="fade-up" data-aos-duration="500" data-aos-delay="100"
+                    >
+                        <h3 class="text-white font-bold font-serif text-[28px] md:text-[34px] lg:text-[38px] xl:text-[42px] leading-[1.2] mb-[12px]">
+                            Bonds
+                        </h3>
+                        <p class="text-[14px] md:text-[15px] text-[#f9f9f9] leading-[1.7] transition-all group-hover:text-[#4c4c4c]">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.
+                        </p>
+                        <img src="assets/images/investments-solutions/is5.jpg" class="rounded-[20px] my-[15px] md:my-[20px] lg:my-[25px]" alt="investments-solutions-image">
+                        <p class="text-[14px] md:text-[15px] text-[#f9f9f9] leading-[1.7] transition-all group-hover:text-[#4c4c4c]">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.
+                        </p>
+                        <a routerLink="/about" class="mt-[22px] md:mt-[27px] lg:mt-[25px] 2xl:mt-[35px] py-[11px] md:py-[12px] px-[30px] md:px-[40px] inline-block text-white text-[13px] md:text-[14px] font-medium uppercase border rounded-full transition-all hover:bg-white hover:text-[#0a64bc]">
+                            Learn More
+                        </a>
+                    </div>
+                    <div
+                        id="tab6"
+                        *ngIf="currentTab === 'tab6'"
+                        data-aos="fade-up" data-aos-duration="500" data-aos-delay="100"
+                    >
+                        <h3 class="text-white font-bold font-serif text-[28px] md:text-[34px] lg:text-[38px] xl:text-[42px] leading-[1.2] mb-[12px]">
+                            Warrants
+                        </h3>
+                        <p class="text-[14px] md:text-[15px] text-[#f9f9f9] leading-[1.7] transition-all group-hover:text-[#4c4c4c]">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.
+                        </p>
+                        <img src="assets/images/investments-solutions/is6.jpg" class="rounded-[20px] my-[15px] md:my-[20px] lg:my-[25px]" alt="investments-solutions-image">
+                        <p class="text-[14px] md:text-[15px] text-[#f9f9f9] leading-[1.7] transition-all group-hover:text-[#4c4c4c]">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.
+                        </p>
+                        <a routerLink="/about" class="mt-[22px] md:mt-[27px] lg:mt-[25px] 2xl:mt-[35px] py-[11px] md:py-[12px] px-[30px] md:px-[40px] inline-block text-white text-[13px] md:text-[14px] font-medium uppercase border rounded-full transition-all hover:bg-white hover:text-[#0a64bc]">
+                            Learn More
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
