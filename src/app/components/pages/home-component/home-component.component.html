@@ -21,6 +21,24 @@
     <!-- Content -->
     <div class="container mx-auto px-4 relative z-20 text-center">
         <div data-aos="fade-up" data-aos-duration="1000">
+            <!-- Status Badge -->
+            <div class="mb-6">
+                <span
+                    *ngIf="isOpen"
+                    class="status-badge status-open"
+                >
+                    <span class="status-dot bg-green-500"></span>
+                    ABIERTO AHORA
+                </span>
+                <span
+                    *ngIf="!isOpen"
+                    class="status-badge status-closed"
+                >
+                    <span class="status-dot bg-red-500"></span>
+                    CERRADO
+                </span>
+            </div>
+
             <h1 class="text-5xl md:text-7xl lg:text-8xl font-bold font-serif mb-6">
                 <span class="text-white">Billares</span>
                 <span class="text-primary-500 neon-text neon-pulse-text"> la 78</span>
@@ -56,6 +74,15 @@
         </a>
     </div>
 </section>
+
+<!-- Divider -->
+<div class="section-divider">
+    <div class="divider-line"></div>
+    <div class="divider-icon">
+        <i class="ri-billiards-line"></i>
+    </div>
+    <div class="divider-line"></div>
+</div>
 
 <!-- Servicios Section -->
 <section id="servicios" class="py-20 lg:py-32 bg-dark-950 relative">
@@ -173,6 +200,15 @@
     </div>
 </section>
 
+<!-- Divider -->
+<div class="section-divider">
+    <div class="divider-line"></div>
+    <div class="divider-icon">
+        <i class="ri-camera-line"></i>
+    </div>
+    <div class="divider-line"></div>
+</div>
+
 <!-- Galería Section -->
 <section id="galeria" class="py-20 lg:py-32 bg-dark-900 relative">
     <div class="container mx-auto px-4">
@@ -223,6 +259,15 @@
         </div>
     </div>
 </section>
+
+<!-- Divider -->
+<div class="section-divider">
+    <div class="divider-line"></div>
+    <div class="divider-icon">
+        <i class="ri-price-tag-3-line"></i>
+    </div>
+    <div class="divider-line"></div>
+</div>
 
 <!-- Precios Section -->
 <section id="precios" class="py-20 lg:py-32 bg-dark-950 relative overflow-hidden">
@@ -341,6 +386,15 @@
     </div>
 </section>
 
+<!-- Divider -->
+<div class="section-divider">
+    <div class="divider-line"></div>
+    <div class="divider-icon">
+        <i class="ri-map-pin-line"></i>
+    </div>
+    <div class="divider-line"></div>
+</div>
+
 <!-- Ubicación y Horarios Section -->
 <section id="ubicacion" class="py-20 lg:py-32 bg-dark-900">
     <div class="container mx-auto px-4">
@@ -417,6 +471,15 @@
         </div>
     </div>
 </section>
+
+<!-- Divider -->
+<div class="section-divider">
+    <div class="divider-line"></div>
+    <div class="divider-icon">
+        <i class="ri-chat-smile-2-line"></i>
+    </div>
+    <div class="divider-line"></div>
+</div>
 
 <!-- Contacto Section -->
 <section id="contacto" class="py-20 lg:py-32 bg-dark-950 relative overflow-hidden">

@@ -151,3 +151,27 @@ body {
     background: rgba(0, 217, 255, 0.3);
     color: #ffffff;
 }
+
+// Section Divider
+.section-divider {
+    @apply flex items-center justify-center py-8 bg-dark-950;
+
+    .divider-line {
+        @apply flex-1 h-px max-w-[200px] md:max-w-[300px];
+        background: linear-gradient(90deg,
+            transparent 0%,
+            rgba(0, 217, 255, 0.3) 50%,
+            transparent 100%
+        );
+    }
+
+    .divider-icon {
+        @apply mx-6 w-12 h-12 rounded-full flex items-center justify-center;
+        background: rgba(0, 217, 255, 0.1);
+        border: 1px solid rgba(0, 217, 255, 0.3);
+
+        i {
+            @apply text-xl text-primary-500;
+        }
+    }
+}
