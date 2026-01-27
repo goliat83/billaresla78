@@ -21,49 +21,46 @@
     <!-- Content -->
     <div class="container mx-auto px-4 relative z-20 text-center">
         <div data-aos="fade-up" data-aos-duration="1000">
-            <!-- Status Badge -->
-            <div class="mb-6">
-                <span
-                    *ngIf="isOpen"
-                    class="status-badge status-open"
+            <!-- Logo -->
+            <div class="mb-10">
+                <img
+                    src="assets/images/logo/logob78tr.png"
+                    alt="Billares la 78"
+                    class="h-44 md:h-56 lg:h-72 w-auto mx-auto logo-glow animate-float"
                 >
-                    <span class="status-dot bg-green-500"></span>
-                    ABIERTO AHORA
-                </span>
-                <span
-                    *ngIf="!isOpen"
-                    class="status-badge status-closed"
-                >
-                    <span class="status-dot bg-red-500"></span>
-                    CERRADO
-                </span>
             </div>
 
-            <h1 class="text-5xl md:text-7xl lg:text-8xl font-bold font-serif mb-6">
-                <span class="text-white">Billares</span>
-                <span class="text-primary-500 neon-text neon-pulse-text"> la 78</span>
-            </h1>
-            <p class="text-xl md:text-2xl text-gray-300 mb-8 max-w-2xl mx-auto">
+            <p class="text-xl md:text-2xl lg:text-3xl text-white mb-8 max-w-3xl mx-auto font-medium neon-text-green">
                 El club de billar más exclusivo de Medellín. Donde la precisión se encuentra con el estilo.
             </p>
-            <div class="flex flex-col sm:flex-row gap-4 justify-center">
-                <a href="#servicios" class="btn-neon-filled">
-                    Explorar Servicios
-                </a>
-                <a href="#contacto" class="btn-neon">
+            <div class="flex justify-center">
+                <a href="#contacto" class="btn-neon-filled">
                     Reservar Ahora
                 </a>
             </div>
         </div>
 
-        <!-- Horario Badge -->
+        <!-- Horario y Estado Card -->
         <div
             data-aos="fade-up"
             data-aos-delay="300"
-            class="mt-16 inline-flex items-center gap-3 glass-card px-6 py-3"
+            class="mt-12 inline-flex flex-col sm:flex-row items-center gap-4 glass-card px-6 py-4"
         >
-            <i class="ri-time-line text-primary-500 text-2xl"></i>
-            <span class="text-white">Abierto todos los días: <strong class="text-primary-400">8:00 AM - 10:00 PM</strong></span>
+            <!-- Horario -->
+            <div class="flex items-center gap-3">
+                <i class="ri-time-line text-primary-500 text-2xl"></i>
+                <span class="text-white">Lunes a Domingo: <strong class="text-primary-400">8:00 AM - 10:00 PM</strong></span>
+            </div>
+
+            <!-- Separador -->
+            <div class="hidden sm:block w-px h-8 bg-dark-600"></div>
+
+            <!-- Status Badge -->
+            <div class="status-badge-inline" [ngClass]="{'status-inline-open': isOpen, 'status-inline-closed': !isOpen}">
+                <span class="status-dot-small" [ngClass]="{'bg-green-500': isOpen, 'bg-red-500': !isOpen}"></span>
+                <span *ngIf="isOpen">ABIERTO AHORA</span>
+                <span *ngIf="!isOpen">CERRADO</span>
+            </div>
         </div>
     </div>
 
@@ -221,44 +218,115 @@
         </div>
 
         <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-            <div class="col-span-2 row-span-2" data-aos="zoom-in" data-aos-delay="100">
+            <!-- Primera foto grande -->
+            <div
+                class="col-span-2 row-span-2 cursor-pointer gallery-item"
+                data-aos="zoom-in"
+                data-aos-delay="100"
+                (click)="openModal(0)"
+            >
                 <img
-                    src="https://images.unsplash.com/photo-1560719887-fe3105fa1e55?q=80&w=1200&auto=format&fit=crop"
-                    alt="Interior del club de billar"
-                    class="w-full h-full object-cover rounded-2xl hover:scale-105 transition-transform duration-500"
+                    [src]="galleryPhotos[0].image"
+                    [alt]="galleryPhotos[0].alt"
+                    class="w-full h-full object-cover rounded-2xl"
                 >
+                <div class="gallery-overlay">
+                    <i class="ri-zoom-in-line text-3xl"></i>
+                </div>
             </div>
-            <div data-aos="zoom-in" data-aos-delay="200">
+
+            <!-- Fotos 2-7 -->
+            <div
+                *ngFor="let photo of galleryPhotos.slice(1, 7); let i = index"
+                class="cursor-pointer gallery-item"
+                data-aos="zoom-in"
+                [attr.data-aos-delay]="(i + 2) * 100"
+                (click)="openModal(i + 1)"
+            >
                 <img
-                    src="https://images.unsplash.com/photo-1609710228159-0fa9bd7c0827?q=80&w=800&auto=format&fit=crop"
-                    alt="Mesa de billar profesional"
-                    class="w-full h-48 object-cover rounded-2xl hover:scale-105 transition-transform duration-500"
+                    [src]="photo.image"
+                    [alt]="photo.alt"
+                    class="w-full h-48 object-cover rounded-2xl"
                 >
+                <div class="gallery-overlay">
+                    <i class="ri-zoom-in-line text-2xl"></i>
+                </div>
             </div>
-            <div data-aos="zoom-in" data-aos-delay="300">
+
+            <!-- Última foto con botón "Ver más" -->
+            <div
+                class="cursor-pointer gallery-item"
+                data-aos="zoom-in"
+                data-aos-delay="800"
+                (click)="openFullGallery()"
+            >
                 <img
-                    src="https://images.unsplash.com/photo-1545454675-3531b543be5d?q=80&w=800&auto=format&fit=crop"
-                    alt="Bolas de billar"
-                    class="w-full h-48 object-cover rounded-2xl hover:scale-105 transition-transform duration-500"
+                    [src]="galleryPhotos[7].image"
+                    [alt]="galleryPhotos[7].alt"
+                    class="w-full h-48 object-cover rounded-2xl"
                 >
-            </div>
-            <div data-aos="zoom-in" data-aos-delay="400">
-                <img
-                    src="https://images.unsplash.com/photo-1514933651103-005eec06c04b?q=80&w=800&auto=format&fit=crop"
-                    alt="Ambiente del bar"
-                    class="w-full h-48 object-cover rounded-2xl hover:scale-105 transition-transform duration-500"
-                >
-            </div>
-            <div data-aos="zoom-in" data-aos-delay="500">
-                <img
-                    src="https://images.unsplash.com/photo-1575444758702-4a6b9222336e?q=80&w=800&auto=format&fit=crop"
-                    alt="Bebidas y ambiente"
-                    class="w-full h-48 object-cover rounded-2xl hover:scale-105 transition-transform duration-500"
-                >
+                <div class="gallery-overlay gallery-overlay-more">
+                    <i class="ri-add-circle-line text-3xl"></i>
+                    <span class="text-sm font-bold mt-1">Ver las 20 fotos</span>
+                </div>
             </div>
         </div>
     </div>
 </section>
+
+<!-- Modal Galería -->
+<div
+    class="gallery-modal"
+    *ngIf="showModal"
+    (click)="closeModal()"
+>
+    <!-- Header -->
+    <div class="gallery-modal-header" (click)="$event.stopPropagation()">
+        <span class="text-white font-semibold">
+            {{ currentPhotoIndex + 1 }} / {{ allPhotos.length }}
+        </span>
+        <button (click)="closeModal()" class="text-white hover:text-primary-500 transition-colors">
+            <i class="ri-close-line text-3xl"></i>
+        </button>
+    </div>
+
+    <!-- Imagen principal -->
+    <div class="gallery-modal-body" (click)="$event.stopPropagation()">
+        <button
+            class="gallery-nav gallery-nav-prev"
+            (click)="prevPhoto()"
+        >
+            <i class="ri-arrow-left-s-line text-3xl"></i>
+        </button>
+
+        <img
+            [src]="allPhotos[currentPhotoIndex].image"
+            [alt]="allPhotos[currentPhotoIndex].alt"
+            class="gallery-modal-img"
+        >
+
+        <button
+            class="gallery-nav gallery-nav-next"
+            (click)="nextPhoto()"
+        >
+            <i class="ri-arrow-right-s-line text-3xl"></i>
+        </button>
+    </div>
+
+    <!-- Thumbnails -->
+    <div class="gallery-modal-thumbs" (click)="$event.stopPropagation()">
+        <div class="flex gap-2 overflow-x-auto py-2 px-4 justify-center">
+            <img
+                *ngFor="let photo of allPhotos; let i = index"
+                [src]="photo.image"
+                [alt]="photo.alt"
+                class="gallery-thumb"
+                [ngClass]="{'gallery-thumb-active': i === currentPhotoIndex}"
+                (click)="currentPhotoIndex = i"
+            >
+        </div>
+    </div>
+</div>
 
 <!-- Divider -->
 <div class="section-divider">

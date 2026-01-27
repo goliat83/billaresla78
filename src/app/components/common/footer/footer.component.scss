@@ -1,8 +1,18 @@
 footer {
-    background: linear-gradient(180deg, #E4F2FF 0%, rgba(217, 217, 217, 0.00) 77.19%);
-}
-.copyright-area {
+    background: linear-gradient(180deg, #0a1628 0%, #0d1f3c 40%, #0f1724 100%);
+    position: relative;
+    overflow: hidden;
+
+    // Efecto de brillo sutil
     &::before {
-        background: linear-gradient(90deg, rgba(217, 217, 217, 0.00) 9.47%, #D9D9D9 49.43%, rgba(217, 217, 217, 0.00) 81.86%);
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 600px;
+        height: 600px;
+        background: radial-gradient(circle, rgba(0, 217, 255, 0.06) 0%, transparent 70%);
+        pointer-events: none;
     }
 }

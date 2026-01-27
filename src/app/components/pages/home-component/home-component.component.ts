@@ -13,11 +13,80 @@ export class HomeComponent implements OnInit, OnDestroy {
     private intervalId: any;
 
     heroSlides = [
-        { image: 'assets/images/banners/hero-billar.jpg', alt: 'Billares la 78' },
-        { image: 'assets/images/banners/florian-ceprika-DObE_YU6oks-unsplash.jpg', alt: 'Mesa de billar profesional' },
-        { image: 'assets/images/banners/billares-para-ir-con-amigos-en-la-cdmx.webp', alt: 'Ambiente del club' },
-        { image: 'assets/images/banners/122146109_770271420492043_1341486190801944675_n.jpg', alt: 'Club de billar' }
+        { image: 'assets/images/mesas/mesa-20.jpg', alt: 'Billares la 78' },
+        { image: 'assets/images/mesas/mesa-16.jpg', alt: 'Mesa de billar profesional' },
+        { image: 'assets/images/mesas/mesa-13.jpg', alt: 'Ambiente del club' },
+        { image: 'assets/images/mesas/mesa-09.jpg', alt: 'Club de billar' }
     ];
+
+    // Galería - fotos visibles en la sección
+    galleryPhotos = [
+        { image: 'assets/images/mesas/mesa-01.jpg', alt: 'Mesa de billar 1' },
+        { image: 'assets/images/mesas/mesa-02.jpg', alt: 'Mesa de billar 2' },
+        { image: 'assets/images/mesas/mesa-03.jpg', alt: 'Mesa de billar 3' },
+        { image: 'assets/images/mesas/mesa-04.jpg', alt: 'Mesa de billar 4' },
+        { image: 'assets/images/mesas/mesa-05.jpg', alt: 'Mesa de billar 5' },
+        { image: 'assets/images/mesas/mesa-06.jpg', alt: 'Mesa de billar 6' },
+        { image: 'assets/images/mesas/mesa-07.jpg', alt: 'Mesa de billar 7' },
+        { image: 'assets/images/mesas/mesa-08.jpg', alt: 'Mesa de billar 8' },
+    ];
+
+    // Todas las fotos para el modal
+    allPhotos = [
+        { image: 'assets/images/mesas/mesa-01.jpg', alt: 'Mesa de billar 1' },
+        { image: 'assets/images/mesas/mesa-02.jpg', alt: 'Mesa de billar 2' },
+        { image: 'assets/images/mesas/mesa-03.jpg', alt: 'Mesa de billar 3' },
+        { image: 'assets/images/mesas/mesa-04.jpg', alt: 'Mesa de billar 4' },
+        { image: 'assets/images/mesas/mesa-05.jpg', alt: 'Mesa de billar 5' },
+        { image: 'assets/images/mesas/mesa-06.jpg', alt: 'Mesa de billar 6' },
+        { image: 'assets/images/mesas/mesa-07.jpg', alt: 'Mesa de billar 7' },
+        { image: 'assets/images/mesas/mesa-08.jpg', alt: 'Mesa de billar 8' },
+        { image: 'assets/images/mesas/mesa-09.jpg', alt: 'Mesa de billar 9' },
+        { image: 'assets/images/mesas/mesa-10.jpg', alt: 'Mesa de billar 10' },
+        { image: 'assets/images/mesas/mesa-11.jpg', alt: 'Mesa de billar 11' },
+        { image: 'assets/images/mesas/mesa-12.jpg', alt: 'Mesa de billar 12' },
+        { image: 'assets/images/mesas/mesa-13.jpg', alt: 'Mesa de billar 13' },
+        { image: 'assets/images/mesas/mesa-14.jpg', alt: 'Mesa de billar 14' },
+        { image: 'assets/images/mesas/mesa-15.jpg', alt: 'Mesa de billar 15' },
+        { image: 'assets/images/mesas/mesa-16.jpg', alt: 'Mesa de billar 16' },
+        { image: 'assets/images/mesas/mesa-17.jpg', alt: 'Mesa de billar 17' },
+        { image: 'assets/images/mesas/mesa-18.jpg', alt: 'Mesa de billar 18' },
+        { image: 'assets/images/mesas/mesa-19.jpg', alt: 'Mesa de billar 19' },
+        { image: 'assets/images/mesas/mesa-20.jpg', alt: 'Mesa de billar 20' },
+    ];
+
+    // Modal
+    showModal: boolean = false;
+    currentPhotoIndex: number = 0;
+
+    openModal(index: number) {
+        this.currentPhotoIndex = index;
+        this.showModal = true;
+        document.body.style.overflow = 'hidden';
+    }
+
+    closeModal() {
+        this.showModal = false;
+        document.body.style.overflow = '';
+    }
+
+    prevPhoto() {
+        this.currentPhotoIndex = this.currentPhotoIndex === 0
+            ? this.allPhotos.length - 1
+            : this.currentPhotoIndex - 1;
+    }
+
+    nextPhoto() {
+        this.currentPhotoIndex = this.currentPhotoIndex === this.allPhotos.length - 1
+            ? 0
+            : this.currentPhotoIndex + 1;
+    }
+
+    openFullGallery() {
+        this.currentPhotoIndex = 0;
+        this.showModal = true;
+        document.body.style.overflow = 'hidden';
+    }
 
     heroCarouselOptions: OwlOptions = {
         loop: true,
