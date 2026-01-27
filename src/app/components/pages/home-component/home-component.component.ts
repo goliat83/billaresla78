@@ -1,4 +1,4 @@
-import { Component, OnInit, OnDestroy } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { Title, Meta } from '@angular/platform-browser';
 import { OwlOptions } from 'ngx-owl-carousel-o';
 
@@ -7,10 +7,9 @@ import { OwlOptions } from 'ngx-owl-carousel-o';
     templateUrl: './home-component.component.html',
     styleUrls: ['./home-component.component.scss']
 })
-export class HomeComponent implements OnInit, OnDestroy {
+export class HomeComponent implements OnInit {
 
     isOpen: boolean = false;
-    private intervalId: any;
 
     heroSlides = [
         { image: 'assets/images/mesas/mesa-20.jpg', alt: 'Billares la 78' },
@@ -114,19 +113,7 @@ export class HomeComponent implements OnInit, OnDestroy {
             content: 'El mejor club de billar en Medellín. Mesas profesionales, torneos, bar, clases y eventos privados. Calle 44 77-58 Av San Juan.'
         });
 
-        // Verificar estado inicial
         this.checkOpenStatus();
-
-        // Actualizar cada minuto
-        this.intervalId = setInterval(() => {
-            this.checkOpenStatus();
-        }, 60000);
-    }
-
-    ngOnDestroy() {
-        if (this.intervalId) {
-            clearInterval(this.intervalId);
-        }
     }
 
     checkOpenStatus() {

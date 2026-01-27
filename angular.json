@@ -40,16 +40,22 @@
                     },
                     "configurations": {
                         "production": {
+                            "optimization": true,
+                            "buildOptimizer": true,
+                            "aot": true,
+                            "sourceMap": false,
+                            "extractLicenses": true,
+                            "namedChunks": false,
                             "budgets": [
                                 {
                                     "type": "initial",
-                                    "maximumWarning": "5mb",
-                                    "maximumError": "10mb"
+                                    "maximumWarning": "1mb",
+                                    "maximumError": "2mb"
                                 },
                                 {
                                     "type": "anyComponentStyle",
-                                    "maximumWarning": "1mb",
-                                    "maximumError": "2mb"
+                                    "maximumWarning": "100kb",
+                                    "maximumError": "200kb"
                                 }
                             ],
                             "outputHashing": "all"
